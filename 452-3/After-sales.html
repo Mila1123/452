@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computers & IT Gadgets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="flex-container">
+    <header>
+        <h1>After-Sales Service</h1>
+    </header>
+    <main>
+        <section class="contact-form">
+            <h2>Submit a Service Request</h2>
+            <form action="/submit-service-request" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="product">Product:</label><br>
+                <input type="text" id="product" name="product" required><br>
+                
+                <label for="issue">Describe the issue:</label><br>
+                <textarea id="issue" name="issue" rows="4" required></textarea><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Mila. All rights reserved.</p>
+            <div class="back-to-home">
+                <a href="index.html">Back to Home</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computers & IT Gadgets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="flex-container">
+    <header>
+        <h1>Product List</h1>
+    </header>
+    <nav>
+        <!-- Navigation links here -->
+    </nav>
+    <main>
+        <section class="product-details">
+            <h1>Featured Products</h1>
+        <div class="product-item" onclick="openModal('computer.jpg', 'Gaming Laptop')">
+            <img src="computer.jpg" alt="Laptop" class="product-image">
+            <h2>Gaming Laptop</h2>
+            <p>Powerful gaming laptop with the latest hardware.</p>
+            <p class="price">$2,003.07</p>
+        </div>
+        <div class="product-item" onclick="openModal('smartphone.jpg', 'Smartphone')">
+            <img src="smartphone.jpg" alt="Smartphone" class="product-image">
+            <h2>Smartphone</h2>
+            <p>Latest model with advanced camera and long battery life.</p>
+            <p class="price">$1,078.57</p>
+        </div>
+        <div class="product-item" onclick="openModal('tablet.jpg', 'Tablet Pro')">
+            <img src="tablet.jpg" alt="Tablet" class="product-image">
+            <h2>Tablet Pro</h2>
+            <p>High-resolution tablet for work and entertainment.</p>
+            <p class="price">$770.40</p>
+        </div> 
+        <div class="product-item" onclick="openModal('headphones.jpg', 'Wireless Headphones')">
+            <img src="headphones.jpg" alt="Headphones" class="product-image">
+            <h2>Wireless Headphones</h2>
+            <p>High-quality sound with noise cancellation.</p>
+            <p class="price">$308.15</p>
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="img01">
+        <div id="caption"></div>
+        </div>
+        </section>
+    </main>
+    <div class="back-to-home">
+        <a href="index.html">Back to Home</a>
+    </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Mila. All rights reserved.</p>
+            <div class="back-to-home">
+                <a href="index.html">Back to Home</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+</body>
+</html>
